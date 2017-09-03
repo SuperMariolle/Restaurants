@@ -1,3 +1,23 @@
+#Restaurants
+
+Le but de l’application : regrouper les 4 restaurants sur une même application pour permettre aux abonnés :
+
+- d’être tenu informé de nos nouveautés/suggestions
+
+- De recevoir des promotions
+
+Nous ne voulons pas que les abonnés puissent y réserver une table ou nous envoyer des messages via l’application. Les communications ne doivent se faire que par téléphone.
+
+Infos sur les restos LA PIGNATA : Tu trouveras beaucoup d’infos sur notre site internet (www.lapignata.be) et notre page facebook. JOÏA : Idem www.joia-vise.be ou notre page facebook
+
+LA TRATTORIA : pas de site internet juste une page facebook
+
+LA BRASSERIE DU JOIA : pas de site internet juste une page facebook
+
+Si tu as d’autres idées par rapport à cette application, n’hesites pas à le suggerer. On évite aussi aux abonnés de donner leurs avis. 
+
+
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
