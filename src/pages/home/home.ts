@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+
+import { NavController, AlertController } from 'ionic-angular';
+import { RestosProvider } from '../../providers/restos/restos';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +10,18 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  //splash = true;
+  restos: any;
 
+  constructor(public navCtrl: NavController,  public alertCtrl: AlertController,public restosService: RestosProvider,private splashScreen: SplashScreen ) {
+    this.restosService.getRestaurants().then((data)=>{
+      this.restos = data;
+    });
+    this.splashScreen.show();
+    
   }
 
+  /*ionViewDidLoad() {
+    setTimeout(() => {this.splash = false}, 4000); //remettre 4000
+  }*/
 }

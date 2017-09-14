@@ -1,18 +1,41 @@
+<!--<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="../../assets/logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>-->
+
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button color="light" ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title >
+        <span text-color="my-custom-color">Restaurants</span>
+     </ion-title> 
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<h3>Ferrera</h3>
+<ion-grid>
+  <ion-row>
+    <ion-col col-12>Bienvenue chez Ferrera</ion-col>
+  </ion-row>
+</ion-grid>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content class="card-background-page">
+  
+  <ion-card *ngFor="let resto of restos">
+      <img class="pres_img" src="{{'../../assets/img/'+ resto.image_name}}"/>
+      <div class="card-title shadowed">{{resto.name}}</div>
+      <div class="card-subtitle shadowed">{{resto.phone}}</div>
+  </ion-card>
+  
+ <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>
+<script>
+  (function resizeListener(){
+    alert("yay");
+  })();
+</script>
